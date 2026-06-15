@@ -70,6 +70,7 @@
 </script> -->
     <!--  -->
 
+<!--
 <script type="text/javascript">
   (function(d, t) {
       var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
@@ -77,6 +78,24 @@
         window.voiceflow.chat.load({
           verify: { projectID: '69fdbc02722dad1dcbf5c737' },
           url: 'https://general-runtime.voiceflow.com',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+-->
+
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '69ba3dce2ea45c83975a2d22' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
           voice: {
             url: "https://runtime-api.voiceflow.com"
           }
